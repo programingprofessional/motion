@@ -1,4 +1,4 @@
-// const popmotion = require('popmotion');
+const popmotion = require('popmotion');
 const ball = document.querySelector('.ball');
 popmotion.animate({
   from: "0px",
@@ -9,6 +9,5 @@ popmotion.animate({
   onUpdate(update){
     console.log(update);
     ball.style.left = update;
-    ball.style.top = update;
   }
 });
