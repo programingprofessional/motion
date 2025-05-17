@@ -7,7 +7,7 @@
     "gh-pages": "^6.3.0"
   },
   "scripts": {
-    "build": "esbuild public/script.js --bundle --outfile=build/script.js",
+    "build": "esbuild public/script.js --bundle --outfile=docs/script.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }
