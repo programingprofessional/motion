@@ -1,5 +1,14 @@
 {
   "dependencies": {
     "popmotion": "^11.0.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.4",
+    "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+    "build": "esbuild public/script.js --bundle --outfile=build/script.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
